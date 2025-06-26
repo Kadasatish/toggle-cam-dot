@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Toggle + Cam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dot"></div>
+
+  <label class="switch">
+    <input type="checkbox" id="dotToggle">
+    <span class="slider"></span>
+  </label>
+  <p>Dot Toggle</p>
+
+  <label class="switch">
+    <input type="checkbox" id="camToggle">
+    <span class="slider"></span>
+  </label>
+  <p>Camera Toggle</p>
+
+  <video id="video" autoplay playsinline muted style="display: none;"></video>
+
+  <!-- Gun.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
